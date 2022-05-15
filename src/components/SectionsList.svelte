@@ -11,16 +11,16 @@
 </script>
 
 {#await getConfluenceData}
-	<div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
-		<div
-			class="animate-pulse border rounded border-gray-300 bg-zinc-50 text-black dark:bg-zinc-700 dark:border-gray-900 dark:text-white p-4 h-full hover:bg-zinc-700 hover:text-white hover:border-gray-900 dark:hover:border-gray-300 dark:hover:bg-zinc-50 dark:hover:text-black transition ease-in-out bg-white"
-		/>
-		<div
-			class="border rounded border-gray-300 bg-zinc-50 text-black dark:bg-zinc-700 dark:border-gray-900 dark:text-white p-4 h-full hover:bg-zinc-700 hover:text-white hover:border-gray-900 dark:hover:border-gray-300 dark:hover:bg-zinc-50 dark:hover:text-black transition ease-in-out bg-white"
-		/>
-		<div
-			class="border rounded border-gray-300 bg-zinc-50 text-black dark:bg-zinc-700 dark:border-gray-900 dark:text-white p-4 h-full hover:bg-zinc-700 hover:text-white hover:border-gray-900 dark:hover:border-gray-300 dark:hover:bg-zinc-50 dark:hover:text-black transition ease-in-out bg-white"
-		/>
+	<div class="grid grid-cols-1 sm:grid-cols-3 gap-2 animate-pulse">
+		<!-- 3 skeleton loader cards -->
+		{#each [1, 2, 3] as item}
+			<div
+				class="drop-shadow-md border border-gray-300 dark:bg-zinc-700 dark:border-gray-900 dark:text-white p-8 h-full transition ease-in-out bg-white"
+			>
+				<div class="w-36 h-8 bg-gray-300 mb-6" />
+				<div class="w-full h-12 bg-gray-300" />
+			</div>
+		{/each}
 	</div>
 {:then data}
 	<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
