@@ -11,7 +11,7 @@
 </script>
 
 {#await getConfluenceData}
-	<div class="grid grid-cols-3 gap-2">
+	<div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
 		<div
 			class="animate-pulse border rounded border-gray-300 bg-zinc-50 text-black dark:bg-zinc-700 dark:border-gray-900 dark:text-white p-4 h-full hover:bg-zinc-700 hover:text-white hover:border-gray-900 dark:hover:border-gray-300 dark:hover:bg-zinc-50 dark:hover:text-black transition ease-in-out bg-white"
 		/>
@@ -23,7 +23,7 @@
 		/>
 	</div>
 {:then data}
-	<div class="grid grid-cols-3 gap-4">
+	<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
 		{#each data.results as result}
 			<a href="/page/{result.title}/{result.id}">
 				<div
