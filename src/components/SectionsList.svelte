@@ -1,16 +1,11 @@
 <!-- Lists all top-level pages in Confluence -->
 <script>
-	import { onMount } from 'svelte';
+import { getConfluenceSpaceData } from '$lib/getConfluenceSpaceData';
 
-	let getConfluenceData = (async () => {
-		const response = await fetch(
-			'https://corsproxy.unixfy.net/?https://unixfy.atlassian.net/wiki/rest/api/content/4096009/child/page?expand=body.atlas_doc_format'
-		);
-		return await response.json();
-	})();
+	import { onMount } from 'svelte';
 </script>
 
-{#await getConfluenceData}
+{#await getConfluenceSpaceData()}
 	<div class="grid grid-cols-1 sm:grid-cols-3 gap-2 animate-pulse">
 		<!-- 3 skeleton loader cards -->
 		{#each [1, 2, 3] as item}
