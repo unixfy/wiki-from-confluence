@@ -1,6 +1,11 @@
 import {readable, writable} from "svelte/store";
 import { browser } from "$app/env";
 
+
+export const spaceRootPage = readable('3047460')
+export const atlassianTenantName = readable('unixfy')
+
+
 // Whether darkmode is enabled or not
 // Enable by default if darkmode is set to true in localstorage or the system scheme is set to dark
 // Persists to localstorage
