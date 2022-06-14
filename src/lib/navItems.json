@@ -2,7 +2,7 @@
     "data": [
         {
             "title": "Log in with SSO",
-            "url":  "https://unixfy.atlassian.net/wiki"
+            "url":  "https://unixfy.atlassian.net/wiki/login.action"
         }
     ]
 }
