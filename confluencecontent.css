@@ -1,0 +1,31 @@
+.confluencecontent :global(h1) {
+    @apply text-3xl
+}
+
+.confluencecontent :global(h2) {
+    @apply text-2xl
+}
+
+.confluencecontent :global(h3) {
+    @apply text-xl
+}
+
+.confluencecontent :global(h4) {
+    @apply text-lg
+}
+
+.confluencecontent :global(h5) {
+    @apply font-bold
+}
+
+.confluencecontent :global(h6) {
+    @apply font-bold text-sm
+}
+
+.confluencecontent :global(.external-link) {
+    @apply text-blue-600 dark:text-blue-300
+}
+
+.confluencecontent :global(img) {
+    @apply inline
+}
