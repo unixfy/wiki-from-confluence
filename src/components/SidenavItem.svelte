@@ -1,5 +1,6 @@
 <script>
 	import { page } from '$app/stores';
+	import {buildPageUrl} from "$lib/buildPageUrl";
 
 	export let data;
 	export let indent = 0;
@@ -7,7 +8,7 @@
 	let open = true;
 </script>
 
-<a href="/page/{data.title}/{data.id}/">
+<a href="{buildPageUrl(data.title, data.id)}">
 	<div
 		style="padding-left: {4 + indent}px;"
 		class="py-1 hover:bg-gray-300 dark:hover:bg-slate-700"
