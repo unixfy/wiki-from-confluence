@@ -9,5 +9,6 @@
     {@html data.body.export_view.value}
 </div>
 
-<style src="../../confluencecontent.css" lang="postcss">
+<!-- MUST apply global here to prevent unused CSS selectors (i.e., css selectors not present outside our @HTML tag) from being auto removed -->
+<style global src="../../confluencecontent.css" lang="postcss">
 </style>

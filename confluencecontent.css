@@ -1,31 +1,59 @@
-.confluencecontent :global(h1) {
-    @apply text-3xl
+.confluencecontent h1 {
+    @apply text-3xl mt-6
 }
 
-.confluencecontent :global(h2) {
-    @apply text-2xl
+.confluencecontent h2 {
+    @apply text-2xl mt-4
 }
 
-.confluencecontent :global(h3) {
-    @apply text-xl
+.confluencecontent h3 {
+    @apply text-xl mt-4
 }
 
-.confluencecontent :global(h4) {
-    @apply text-lg
+.confluencecontent h4 {
+    @apply text-lg mt-4
 }
 
-.confluencecontent :global(h5) {
-    @apply font-bold
+.confluencecontent h5 {
+    @apply font-bold mt-2
 }
 
-.confluencecontent :global(h6) {
-    @apply font-bold text-sm
+.confluencecontent h6 {
+    @apply font-bold text-sm mt-2 uppercase
 }
 
-.confluencecontent :global(.external-link) {
+.confluencecontent .external-link {
     @apply text-blue-600 dark:text-blue-300
 }
 
-.confluencecontent :global(img) {
+.confluencecontent img {
     @apply inline
+}
+
+.confluencecontent .panel {
+    @apply rounded p-6 dark:text-slate-900
+}
+
+.confluencecontent table {
+    @apply table w-full
+}
+
+.confluencecontent .table-wrap {
+    @apply relative overflow-x-auto shadow-md sm:rounded-lg my-4
+}
+
+.confluencecontent td {
+    @apply py-4 px-6
+}
+
+.confluencecontent tr {
+    @apply bg-white border-b dark:bg-gray-800 dark:border-gray-700
+}
+
+.confluencecontent th {
+    @apply px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap
+}
+
+.confluencecontent hr {
+    @apply my-4
 }
