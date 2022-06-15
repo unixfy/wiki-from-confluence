@@ -1,8 +1,6 @@
 <!-- Lists all top-level pages in Confluence -->
 <script>
 import { getConfluenceSpaceData } from '$lib/getConfluenceSpaceData';
-
-	import { onMount } from 'svelte';
 </script>
 
 {#await getConfluenceSpaceData()}
@@ -28,7 +26,10 @@ import { getConfluenceSpaceData } from '$lib/getConfluenceSpaceData';
 						{result.title} <i class="fas fa-chevron-right" />
 					</p>
 					<p>
-						{JSON.parse(result.body.atlas_doc_format.value).content[0].content[0].content[0].text}
+<!--						Basically grabs the text from the first excerpt macro in the JSON -->
+<!--						Yeah it's super hacky -->
+<!--						Text MUST be the first element in the excerpt macro to avoid breakage -->
+						{JSON.parse(result.body.atlas_doc_format.value).content.filter(item => !!item.attrs && item.attrs.extensionKey == "excerpt" )[0].content[0].content[0].text}
 					</p>
 				</div>
 			</a>
