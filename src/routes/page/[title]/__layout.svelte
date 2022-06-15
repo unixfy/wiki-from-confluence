@@ -25,8 +25,8 @@
 
 <div class="page-wrapper">
 	<div class="ct">
-		<div class="grid sm:grid-cols-7 gap-8 mt-4">
-			<div class="col-span-2">
+		<div class="grid grid-cols-1 sm:grid-cols-7 gap-y-8 sm:gap-x-8 mt-4">
+			<div class="col-span-1 sm:col-span-2">
 				<Sidenav data="{pagedata}" />
 			</div>
 			<div class="col-span-5">

@@ -17,7 +17,7 @@
     }
 </script>
 
-<div class="py-1 hover:bg-gray-300 dark:hover:bg-slate-700" style="padding-left: {4 + indent}px;"
+<div class="py-1 hover:bg-gray-300 dark:hover:bg-slate-700 w-full" style="padding-left: {4 + indent}px;"
      class:bg-gray-300={isActive} class:dark:bg-slate-700={isActive}>
     <span on:click={toggle}>
         <!--    Show a different icon if there's children-->
