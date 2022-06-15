@@ -17,8 +17,9 @@
 		{/each}
 	</div>
 {:then data}
-	<h1 class="section-heading">{data.title} ({data.id})</h1>
-	<hr />
+	<h1 class="section-heading">{data.title} <span class="text-sm">{data.id}</span></h1>
+
+	<div class="mb-4 md:mb-8 border border-slate-900 dark:border-white"></div>
 
 	<p>
 		<RenderWikiContent data="{data}"/>
