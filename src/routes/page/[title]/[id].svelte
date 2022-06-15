@@ -1,6 +1,7 @@
 <script>
 	import { page } from '$app/stores';
 	import { getConfluencePageData } from '$lib/getConfluencePageData';
+	import RenderWikiContent from "../../../components/RenderWikiContent.svelte";
 </script>
 
 {#await getConfluencePageData($page.params.id)}
@@ -20,7 +21,7 @@
 	<hr />
 
 	<p>
-		{data.body.export_view.value}
+		<RenderWikiContent data="{data}"/>
 	</p>
 {:catch error}
 	<div class="my-4 bg-red-500 p-5 rounded text-white">
