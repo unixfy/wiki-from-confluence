@@ -30,8 +30,32 @@
     @apply inline
 }
 
+.confluencecontent .confluence-embedded-image {
+    @apply block my-4 border rounded
+}
+
 .confluencecontent .panel {
-    @apply rounded p-6 dark:text-slate-900
+    @apply rounded p-6 dark:text-slate-900 my-4
+}
+
+.confluencecontent .confluence-information-macro {
+    @apply rounded p-6 dark:text-slate-900 my-4
+}
+
+.confluencecontent .confluence-information-macro-information {
+    @apply bg-blue-200 border border-blue-700 dark:text-slate-900
+}
+
+.confluencecontent .confluence-information-macro-warning {
+    @apply bg-red-200 border border-red-700 dark:text-slate-900
+}
+
+.confluencecontent .confluence-information-macro-tip {
+    @apply bg-green-200 border border-green-700 dark:text-slate-900
+}
+
+.confluencecontent .confluence-information-macro-note {
+    @apply bg-yellow-200 border border-yellow-700 dark:text-slate-900
 }
 
 .confluencecontent table {
@@ -56,4 +80,53 @@
 
 .confluencecontent hr {
     @apply my-4
+}
+
+.confluencecontent blockquote {
+    @apply pl-4 border-l-2 py-2 my-4
+}
+
+.confluencecontent .decision-list {
+    @apply pl-4 py-2 my-4 bg-gray-200/90 rounded dark:text-slate-900
+}
+
+.confluencecontent .decision-list > li::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font: var(--fa-font-solid);
+    content: "\f126";
+    @apply pr-2
+}
+
+.confluencecontent time {
+    @apply bg-gray-200 dark:text-slate-900 px-2 rounded
+}
+
+.confluencecontent .status-macro {
+    @apply px-2 rounded bg-gray-200 dark:text-slate-900 border border-gray-700 inline
+}
+
+.confluencecontent .aui-lozenge-progress {
+    @apply bg-purple-200 border-purple-700
+}
+
+.confluencecontent .aui-lozenge-complete {
+    @apply bg-blue-200 border-blue-700
+}
+
+.confluencecontent .aui-lozenge-error {
+    @apply bg-red-200 border-red-700
+}
+
+.confluencecontent .aui-lozenge-current {
+    @apply bg-yellow-200 border-yellow-700
+}
+
+.confluencecontent .aui-lozenge-success {
+    @apply bg-green-200 border-green-700
+}
+
+.confluencecontent .code {
+    @apply overflow-x-auto dark:text-white
 }
